@@ -25,3 +25,7 @@ Example: if I input `AI4Devs`, it should return `sveD4IA`.
 
 The output should be the modified `index.html` file and the new `script.js` file.
 ```
+
+```markdown
+The button should appear when there is enough text, more than 3 letters
+```

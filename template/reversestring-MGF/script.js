@@ -7,6 +7,19 @@ document.addEventListener('DOMContentLoaded', function () {
         return str.split('').reverse().join('');
     }
 
+    // Hide button initially
+    button.style.display = 'none';
+
+    // Show button only when input length > 3
+    input.addEventListener('input', function () {
+        if (input.value.length > 3) {
+            button.style.display = 'inline-block';
+        } else {
+            button.style.display = 'none';
+            result.textContent = '';
+        }
+    });
+
     button.addEventListener('click', function () {
         const value = input.value;
         const reversed = reverseString(value);
