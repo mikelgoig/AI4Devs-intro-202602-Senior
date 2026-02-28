@@ -7,22 +7,17 @@ document.addEventListener('DOMContentLoaded', function () {
         return str.split('').reverse().join('');
     }
 
-    // Hide button initially
+    // Hide button since it's no longer needed
     button.style.display = 'none';
 
-    // Show button only when input length > 3
+    // Generate result in real time
     input.addEventListener('input', function () {
-        if (input.value.length > 3) {
-            button.style.display = 'inline-block';
+        const value = input.value;
+
+        if (value.length > 3) {
+            result.textContent = reverseString(value);
         } else {
-            button.style.display = 'none';
             result.textContent = '';
         }
-    });
-
-    button.addEventListener('click', function () {
-        const value = input.value;
-        const reversed = reverseString(value);
-        result.textContent = reversed;
     });
 });

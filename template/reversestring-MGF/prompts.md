@@ -29,3 +29,7 @@ The output should be the modified `index.html` file and the new `script.js` file
 ```markdown
 The button should appear when there is enough text, more than 3 letters
 ```
+
+```markdown
+Now I need the result to be generated in real time, without depending on the button, but only if there are more than three characters
+```
